@@ -30,3 +30,14 @@ std::string inverserMots(const std::string& text) {
     }
     return assemblerString(retval) ;
 }
+
+bool estUnPalindrome(const std::string &mot) {
+    std::stack<char> pile ;
+
+    for (auto c: mot) pile.push(c) ;
+    for (auto c: mot) {
+        if (pile.top() != c) return false ;
+        pile.pop() ;
+    }
+    return true ;
+}

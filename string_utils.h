@@ -13,4 +13,5 @@
 std::vector<std::string> exploserString(const std::string& text, char del = ' ') ;
 std::string assemblerString(const std::vector<std::string>& mots, char del = ' ') ;
 std::string inverserMots(const std::string& text) ;
+bool estUnPalindrome(const std::string& mot) ;
 #endif //EXERCICES_CHAP_3_SOLUTION_STRING_UTILS_H

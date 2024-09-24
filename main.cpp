@@ -1,8 +1,11 @@
 #include <iostream>
 #include "string_utils.h"
+#include <cassert>
 
 int main() {
-    std::string test = "Allo je suis une string sans signification!" ;
-    std::cout << inverserMots(test) ;
+    std::string test = "allo je suis une string" ;
+    assert(inverserMots(test) == "string une suis je allo ") ;
+    assert(estUnPalindrome("laval")) ;
+    assert(!estUnPalindrome("avala")) ;
     return 0;
 }
